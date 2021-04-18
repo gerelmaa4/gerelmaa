@@ -1,0 +1,32 @@
+<%- include('./layout/header.ejs'); %>
+
+<div class="page">
+  <div class="panel">
+    <div class="title">
+      <h1>works</h1>
+      <h2>Nulla elit est, commodo id ultrices et, sollicitudin a odioras tortor ante, placerat at posuer</h2>
+    </div>
+    
+    
+    
+    
+    <div class="portfolio-content">
+    <ul class="portfolio-area">
+      <% for(var i = 0; i< users.length; i++) { %>
+      <li class="portfolio-item2" data-id="id-0" data-type="cat-item-4">
+        <div><span class="image-block"><img width="190" height="130" src="../avatars/<%= users[i].profilePicture %>" alt="Praesent placerat" title="Praesent placerat" /></span>
+          <div class="home-portfolio-text">
+            <h4 class="post-title-portfolio"><a href="#" rel="bookmark" title="Praesent placerat"><%= users[i].username %></a></h2>
+          </div>
+        </div>
+      </li>
+      <% } %>
+      <div class="column-clear"></div>
+    </ul>
+    <!--end portfolio-area -->
+  </div>
+  
+  </div>
+</div>
+<!---page-wrap-end--->
+<%- include('./layout/footer.ejs'); %>

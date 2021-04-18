@@ -1,0 +1,48 @@
+<%- include('./layout/header.ejs'); %>
+      <!-- section --> 
+ <div class="page">
+      <div class="panel">
+           <section id="gallery">
+               <div class="container">
+                    <div class="row">
+                         <div class="portfolio-content">
+                           
+                                   
+                              <div class="title">
+                                   <div class="blog-post-title">
+                                        <h1><%= blog.title %></a></h2>
+                                   </div>                                        
+                                 <span><i class="fa fa-date"></i><%= blog.date %></span>
+
+          
+                                   <div class="blog-post-des">
+                                  
+                                        <h3><%= blog.desTitle %> </h3>
+                                  
+                                       
+                                        <div class="blog-post-image">
+                                        <img src="../photos/<%= blog.blogPhoto %>" class="img-responsive" alt="Blog Image 3" width="94%">
+                                        <p><%= blog.description %></p>
+                                   </div>
+                                      </div>  
+                              
+                                 
+                                   
+                                   
+          
+                                  <br><br>
+                                  
+                              </div>
+                    </div>
+               </div>
+          </section></div>
+                  </div>
+   
+      <!-- end section -->
+
+<!-- section -->
+    
+      <!-- end section -->
+      
+      <!-- footer -->
+      <%- include('./layout/footer.ejs'); %>

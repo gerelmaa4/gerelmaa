@@ -1,0 +1,34 @@
+<%- include('./layout/header.ejs'); %>
+<div class="clear"></div>
+<div class="banner-wrap">
+  <div class="banner"> <img src="images/banner1.jpg" alt="banner" /> </div>
+</div>
+<!---banner--->
+<div class="page-wrap">
+  <div class="wrap">
+
+   
+  
+    <div class="clear"></div>
+  </div>
+  <!---wrap-end--->
+  <% for(var i = users.length-1; i >= 0; i--) { %>
+  <div class="panel">
+    <div class="title">
+      <h1><%= users[i].title %></h1>
+      <h2><%= users[i].date %></h2>
+    <div class="content"><img src="../photos/<%= users[i].blogPhoto %>" width="220px" height="100%" alt="" />
+      <h3><%= users[i].user %><br />
+        <br />
+      </h3>
+      <p><%= users[i].desTitle %> </p>
+      <div class="button floatLeft"><a href="/single-post/<%= users[i].id %>">More</a></div>
+    </div>
+  </div>
+  <!---panel-end--->
+
+</div>
+<% } %>
+</div>
+<!---page-wrap-end--->
+      <%- include('./layout/footer.ejs'); %>
